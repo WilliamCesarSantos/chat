@@ -1,0 +1,21 @@
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+	
+	group = 'com.santos.will'
+	version = '1.0'
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+
+    repositories {
+       mavenCentral()
+    }
+
+    dependencies {
+		testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+
+    jar {
+        manifest.attributes provider: 'gradle'
+    }
+}
