@@ -1,0 +1,10 @@
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Chat Client',
+                   'Implementation-Version': version,
+                   'Main-Class': 'com.santos.will.chat.Client'
+    }
+}
+
+dependencies {
+}
